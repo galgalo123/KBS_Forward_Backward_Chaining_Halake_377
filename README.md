@@ -150,19 +150,36 @@ The program will automatically run all test cases and display the inference resu
 
 # 7. Sample Output
 
-Example output:
+Example execution of the expert system:
 
 Student: Galgalo Halake
 Completed Courses: IST 2010, IST 1025, STA 2020
 GPA: 3.4
 
 Forward Chaining Results:
-Rule triggered → Eligible for IST 4035
+Rule fired → Eligible for IST 4035
+
+Final Eligible Courses:
+- Eligible for IST 4035
 
 Backward Chaining Query:
 Is Galgalo Halake eligible for IST 4035?
 
-Result: **PROVED**
+Result: PROVED
+
+
+Student: John Kamau
+Completed Courses: IST 2010, IST 1025, IST 2040
+GPA: 3.3
+
+Forward Chaining Results:
+Rule fired → Eligible for IST 3020
+Rule fired → Eligible for IST 3030
+
+Backward Chaining Query:
+Is John Kamau eligible for IST 3030?
+
+Result: PROVED
 
 ---
 
